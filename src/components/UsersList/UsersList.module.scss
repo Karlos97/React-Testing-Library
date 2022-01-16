@@ -1,0 +1,17 @@
+@import '../../styles//view-port.scss';
+
+.users-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 30px;
+  width: 107rem;
+  @include respond(tab-port) {
+    width: 64rem;
+  }
+  @include respond(phone) {
+    width: 36rem;
+  }
+}
