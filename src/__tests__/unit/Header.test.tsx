@@ -2,7 +2,7 @@ import { logRoles, render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import Header from '../../components/Layout/Header/Header';
 describe('Header component', () => {
-  const expectedButtonText = 'Bac';
+  const expectedButtonText = 'Back';
 
   test('testing headers navigation button unavaible', () => {
     render(
@@ -14,8 +14,6 @@ describe('Header component', () => {
       exact: true,
     });
     expect(outputElement).toBeInTheDocument();
-    // const outputElement = screen.queryByLabelText(expectedButtonText);
-    // expect(outputElement).toBeInTheDocument;
   });
 
   test('testing headers navigation button unavaible', () => {

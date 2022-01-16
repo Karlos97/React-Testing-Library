@@ -20,10 +20,6 @@ describe('User Card Top Component', () => {
         isUserDetails={elementIsUserDetails}
       />
     );
-    // Act
-    // ... nothing
-
-    // Assert
     const loginPresence = screen.getByText(elementLogin, {
       exact: true,
     });
@@ -38,7 +34,6 @@ describe('User Card Top Component', () => {
     expect(loginPresence && idPresence).toBeTruthy();
   });
   test('renders <UserCardTop as userdetails', () => {
-    // Arrange
     render(
       <UserCardTop
         login={elementLogin}
@@ -48,10 +43,6 @@ describe('User Card Top Component', () => {
         isUserDetails={elementIsUserDetails}
       />
     );
-    // Act
-    // ... nothing
-
-    // Assert
 
     expect(
       screen.getByText('username', {
@@ -60,7 +51,6 @@ describe('User Card Top Component', () => {
     ).toBeInTheDocument();
   });
   test('renders <UserCardTop as userslist', () => {
-    // Arrange
     render(
       <UserCardTop
         login={elementLogin}
@@ -70,11 +60,6 @@ describe('User Card Top Component', () => {
         isUserDetails={!elementIsUserDetails}
       />
     );
-    // Act
-    // ... nothing
-
-    // Assert
-
     expect(
       screen.queryByText('username', {
         exact: true,

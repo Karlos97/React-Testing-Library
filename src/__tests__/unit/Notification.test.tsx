@@ -6,7 +6,6 @@ describe('Notification component', () => {
     const expectedTextStatus = 'succes';
     const expectedTextMessage = 'succes message';
     const expectedTextTitle = 'succes title';
-    // Arrange
     render(
       <Notification
         status={expectedTextStatus}
@@ -15,10 +14,6 @@ describe('Notification component', () => {
       />
     );
 
-    // Act
-    // ... nothing
-
-    // Assert
     const notificationMessageElement = screen.getByText(expectedTextMessage, {
       exact: true,
     });
@@ -32,7 +27,6 @@ describe('Notification component', () => {
     const expectedTextStatus = 'error';
     const expectedTextMessage = 'error message';
     const expectedTextTitle = 'error title';
-    // Arrange
     render(
       <Notification
         status={expectedTextStatus}
@@ -41,10 +35,6 @@ describe('Notification component', () => {
       />
     );
 
-    // Act
-    // ... nothing
-
-    // Assert
     const notificationMessageElement = screen.getByText(expectedTextMessage, {
       exact: true,
     });
